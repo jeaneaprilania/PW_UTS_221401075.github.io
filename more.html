@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <!-- Mendefinisikan karakter set (UTF-8). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Menyertakan meta tag untuk mengatur tampilan responsif pada perangkat bergerak. -->
+  <title>JeRe Outfit Recommendation</title>
+  <!-- Memberikan judul pada halaman (JeRe Outfit Recommendation). -->
+  <link rel="icon" href="img/logo_jere-removebg-preview (1).png" type="image/png">
+  <!-- Menyertakan favicon (ikon situs web). -->
+
+
+
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif; /* Mengatur jenis font untuk seluruh body */
+      margin: 0; /* Menghilangkan margin pada body */
+      padding: 0; /* Menghilangkan padding pada body */
+      background-color: #000000; /* Mengatur warna latar belakang body menjadi hitam */
+      text-align: center; /* Mengatur tata letak teks menjadi center */
+    }
+
+    /* Pengaturan untuk elemen header */
+    header {
+      text-align: center; /* Mengatur tata letak teks pada header menjadi center */
+      color: #e75480; /* Mengatur warna teks pada header menjadi pink */
+      padding: 20px; /* Menambah padding pada header sebesar 20px */
+    }
+
+    /* Pengaturan untuk grid foto */
+    .photo-grid {
+      display: grid; /* Menggunakan display grid untuk membuat grid layout */
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mengatur jumlah dan lebar kolom grid */
+      gap: 10px; /* Menambahkan jarak antar item di dalam grid */
+      padding: 20px; /* Menambah padding pada grid sebesar 20px */
+      max-width: 1200px; /* Mengatur lebar maksimum grid */
+      margin: 0 auto; /* Mengatur margin horizontal grid menjadi auto (agar grid berada di tengah) */
+    }
+
+    /* Pengaturan untuk setiap item di dalam grid */
+    .photo-grid-item {
+      position: relative; /* Mengatur posisi relatif untuk item grid */
+      overflow: hidden; /* Menyembunyikan bagian overflow dari item */
+      border-radius: 8px; /* Memberikan sudut melengkung pada item */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada item */
+    }
+
+    /* Pengaturan untuk gambar di dalam item grid */
+    .photo-grid-item img {
+      width: 100%; /* Mengatur lebar gambar menjadi 100% dari lebar parent */
+      height: 100%; /* Mengatur tinggi gambar menjadi 100% dari tinggi parent */
+      object-fit: cover; /* Menyesuaikan gambar agar muat dengan proporsi aspek dan tidak terdistorsi */
+      border-radius: 8px; /* Memberikan sudut melengkung pada gambar */
+    }
+
+    /* Pengaturan untuk deskripsi foto pada item grid */
+    .photo-description {
+      position: absolute; /* Mengatur posisi absolut untuk deskripsi foto */
+      bottom: 0; /* Menempatkan deskripsi di bagian bawah item */
+      left: 0; /* Menempatkan deskripsi di bagian kiri item */
+      width: 100%; /* Mengatur lebar deskripsi menjadi 100% dari lebar parent */
+      background-color: rgba(0, 0, 0, 0.7); /* Memberikan latar belakang hitam transparan pada deskripsi */
+      color: #fff; /* Mengatur warna teks deskripsi menjadi putih */
+      padding: 10px; /* Menambah padding pada deskripsi sebesar 10px */
+      text-align: center; /* Mengatur tata letak teks pada deskripsi menjadi center */
+      opacity: 0; /* Menset awal opacity deskripsi menjadi 0 (transparan) */
+      transition: opacity 0.3s ease; /* Menambahkan efek transisi untuk opacity */
+      cursor: pointer; /* Mengubah ikon kursor saat diarahkan ke deskripsi */
+    }
+
+    /* Efek hover untuk menampilkan deskripsi pada item grid */
+    .photo-grid-item:hover .photo-description {
+      opacity: 1; /* Mengubah opacity deskripsi menjadi 1 saat item dihover */
+    }
+    /* ... (CSS untuk elemen header, .photo-grid, .photo-grid-item, dsb.) */
+</style>
+
+</head>
+<body>
+
+  <!-- Bagian Header -->
+    <header>
+        <h1>Outfit Recommendations</h1>
+      </header>
+
+  <div class="photo-grid">
+ <!-- ... (Grid foto untuk setiap kategori pakaian) -->
+
+  <!--  Grid Casual ootd -->
+    <div class="photo-grid-item">
+      <!-- div yang mewakili satu item dalam grid foto -->
+      <img src="./img/more ootd/m1.jpg" alt="Photo">
+      <!-- untuk menampilkan gambar pada webnya -->
+      <div class="photo-description">Casual Outfit</div>
+      <!-- div yang berisi deskripsi untuk foto tersebut -->
+    </div>
+
+    <!-- Penjelasan ini sama untuk semua grid foto berikutnya -->
+    
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m2.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m3.jpg" alt="Photo ">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m4.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m5.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m6.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m7.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m8.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m9.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m10.jpg" alt="Photo">
+      <div class="photo-description">Casual Outfit</div>
+    </div>
+
+<!-- Formal outfits -->
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m11.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m12.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m13.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m14.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m15.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m16.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m17.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m18.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m19.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+    <div class="photo-grid-item">
+      <img src="./img/more ootd/m20.jpg" alt="Photo">
+      <div class="photo-description">Formal Outfit</div>
+    </div>
+
+  <!-- Hijab Outfit -->
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m21.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m22.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m23.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m24.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m25.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m26.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m27.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m28.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m29.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m30.jpg" alt="Photo">
+    <div class="photo-description">Hijab Outfit</div>
+  </div>
+  
+  <!-- Party Outfit -->
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m31.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m32.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m33.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m34.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m35.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m36.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m37.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m38.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m39.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m40.jpg" alt="Photo">
+    <div class="photo-description">Party Outfit</div>
+  </div>
+
+  <!-- Beach Outfits -->
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m41.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m42.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m43.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m44.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m45.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m46.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m47.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m48.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m49.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+  <div class="photo-grid-item">
+    <img src="./img/more ootd/m50.jpg" alt="Photo">
+    <div class="photo-description">Beach Outfit</div>
+  </div>
+   
+  </div>
+<!-- Referensi ke file script.js -->
+  <script src="more_js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags untuk mengatur karakter set, kompatibilitas IE, dan viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Memberikan judul pada halaman (JeRe Fashion). -->
+    <title>JeRe Fashion</title>
+    <!--Ikon Favicon -->
+    <link rel="icon" href="img/logo_jere-removebg-preview (1).png" type="image/png">
+    <!-- Link Bootstrap CSS untuk menggunakan framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link ke file CSS yang disimpan lokal -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  </head>
+  <body>
+
+
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg shadow-lg fixed-top">
+      <div class="container">
+        <!-- Menambahkan logo dan nama web di samping navbar -->
+        <a class="navbar-brand" href="#home">
+            <img src="./img/logo_jere-removebg-preview (1).png" alt="Your Logo" width="30" height="30" class="d-inline-block align-top">
+            JeRe
+        </a>
+        <!-- Tombol toggle untuk tampilan responsif pada layar kecil -->
+        <button
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+         <!-- Daftar menu navbar -->
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Menu Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <!-- Menu Trending -->
+            <li class="nav-item">
+              <a class="nav-link" href="#trend-fashion">Trending</a>
+            </li>
+            <!-- Menu Recommendations -->
+            <li class="nav-item">
+              <a class="nav-link" href="#shopee">recommendations</a>
+            </li>
+            <!-- Menu About Me -->
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- banner -->
+    <div id="home" class="carousel slide">
+        <!-- Indikator carousel (titik navigasi ke slide tertentu) -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <!-- Item-carousel, setiap div ini merepresentasikan satu slide -->
+        <div class="carousel-inner">
+        <!-- Slide pertama, aktif -->
+        <div class="carousel-item active">
+            <!-- Gambar slide 1-->
+            <img src="./img/banner1.jpg" class="d-block w-100" alt="back1">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+          </div>
+          <!-- Slide kedua -->
+          <div class="carousel-item">
+             <!-- Gambar slide -->
+            <img src="./img/banner2.jpg" class="d-block w-100" alt="back2">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <!-- Tombol navigasi sebelumnya -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <!-- Tombol navigasi berikutnya (NEXT) -->
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+   <!-- Trending -->
+<div id="trend-fashion" class="container-fluid layanan pt-5 pb-5">
+    <div class="container text-center">
+        <!-- Judul (Trending) -->
+      <h2 class="display-3">Trending</h2>
+      <a href="#trend-fashion"></a>
+      <!-- Deskripsi Trending -->
+      <p>
+        Trend Fashion Of The Week
+      </p>
+    </div>
+  
+    <!-- Grid Foto Trending -->
+<div class="container mt-5">
+    <div class="row">
+      <!-- Foto 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 1 -->
+          <img src="./img/g3.jpg" class="img-fluid" alt="Trending Photo 1" />
+        </div>
+      </div>
+  
+      <!-- Foto 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 2 -->
+          <img src="./img/g2.jpg" class="img-fluid" alt="Trending Photo 2" />
+        </div>
+      </div>
+  
+      <!-- Foto 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 3 -->
+          <img src="./img/g4.jpg" class="img-fluid" alt="Trending Photo 3" />
+        </div>
+      </div>
+  
+      <!-- Foto 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 4 -->
+          <img src="./img/g5.jpg" class="img-fluid" alt="Trending Photo 4" />
+        </div>
+      </div>
+  
+      <!-- Foto 5 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 5 -->
+          <img src="./img/g6.jpg" class="img-fluid" alt="Trending Photo 5" />
+        </div>
+      </div>
+  
+      <!-- Foto 6 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 6 -->
+          <img src="./img/g7.jpg" class="img-fluid" alt="Trending Photo 6" />
+        </div>
+      </div>
+  
+      <!-- Foto 7 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 7 -->
+          <img src="./img/g8.jpg" class="img-fluid" alt="Trending Photo 7" />
+        </div>
+      </div>
+  
+      <!-- Foto 8 -->
+      <div class="col-md-3 mb-4">
+        <div class="img-container rounded-corners">
+            <!-- Gambar Trending Photo 8 -->
+          <img src="./img/g1.jpg" class="img-fluid" alt="Trending Photo 8" />
+        </div>
+      </div>
+
+    <!-- Button Row (Load More Fashion) -->
+    <div class="row">
+    <div class="col-md-12 text-center">
+    <!-- Tombol untuk me-load lebih banyak fashion -->
+      <a href="./more.html" target="_blank" class="btn btn-pink">Load More Fashion</a>
+    </div>
+  </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+   <!-- Shopee Product -->
+<div id="shopee" class="container-fluid pt-5 pb-5 bg-dark">
+    <div class="container text-center">
+        <!-- Judul untuk bagian Shopee -->
+        <h2 class="display-3">Shopee Product Recommendation</h2>
+        <!-- Deskripsi singkat untuk produk Shopee -->
+        <p>
+            Fashion products from Shopee that I recommend to you.
+        </p>
+        <div class="row pt-4 gx-4 gy-2">
+
+            <!-- Setiap produk Shopee diwakili oleh satu blok HTML -->
+
+            <!-- foto ke 1 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Halostylo-Liona-Long-Sateen-Dress-i.131303241.23447609647?sp_atk=20db6a56-4c92-405c-a443-0b0c7461b801&xptdk=20db6a56-4c92-405c-a443-0b0c7461b801" target="_blank">
+                     <!-- Card untuk menampilkan gambar dan informasi produk -->
+                    <div class="card crop-img">
+                      <!-- Gambar produk -->
+                        <img
+                            src="./img/shopee photo/s1.jpeg"
+                            class="card-img-top"
+                            alt="Halostylo Liona Long Sateen Dress"
+                        />
+                        <!-- Informasi produk -->
+                        <div class="card-body">
+                            <h5 class="card-title">Halostylo Liona Long Sateen Dress</h5>
+                        </div>
+                        <!-- Harga produk -->
+                        <div class="price-box">
+                            <p class="price">Rp149.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- (Penjelasan Berlanjut untuk produk berikutnya...) -->
+
+            <!-- foto ke 2 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/-Premium-V-Halter-Neck-Button-Down-Knit-Crop-Top-7234-i.16762565.11623558723" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s2.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">V Halter Neck Button Down Knit Crop Top</h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp99.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- foto ke 3 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/-Premium-Korean-Plisket-Colour-Blend-Pants-Celana-Plisket-Perpaduan-Warna-7261-i.16762565.11621505945" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s3.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Plisket Colour Blend Pants Celana Plisket</h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp129.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          <!-- foto ke 4 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/111-Wanita-Sepatu-Hak-Tinggi-untuk-Pesta-Pernikahan-Wisuda-tinggi-6CM-i.784529617.21868728177?sp_atk=55dc523a-cd76-43fe-a5d0-d27145beff07&xptdk=55dc523a-cd76-43fe-a5d0-d27145beff07" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s4.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title"> Wanita Sepatu Hak Tinggi untuk Pesta/Pernikahan/Wisuda/h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp199.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 5 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Russ-Sweater-Hoodie-Favela-Broken-White-i.106751288.21571808894?sp_atk=ee46b850-3671-4249-bdd9-daccc5107554&xptdk=ee46b850-3671-4249-bdd9-daccc5107554" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s5.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Russ Sweater Hoodie Favela Broken White</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp600.000</del>
+                            <p class="price">Rp199.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto Ke 6 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Rok-Denim-Wanita-Kasual-A-line-Fashion-Pinggang-Tinggi-Gaya-Korea-Rok-Panjang-Wanita-Modern-i.1031283423.23582402087?sp_atk=e81ab873-9d97-4341-8cb5-a4f9a46e0875&xptdk=e81ab873-9d97-4341-8cb5-a4f9a46e0875" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s6.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Rok Denim Wanita Kasual A-line</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp158.898 - Rp214.000</del>
+                            <p class="price">Rp52.999 - Rp107.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          <!-- Foto ke 7 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Korean-Puff-Sleeve-Plain-Crop-Blouse-1668-(S-XL)-i.16762565.19091149052?sp_atk=52da67d0-50e8-49ea-9180-d1cb65a6d1e1&xptdk=52da67d0-50e8-49ea-9180-d1cb65a6d1e1" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s7.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">V Halter Neck Button Down Knit Crop Top</h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp99.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          <!-- Foto ke 8 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/(Bonus-Kaos-Kaki-Skate-Oldschool)-Sepatu-Ventela-Original-100-Sneakers-Pria-Vantela-New-Public-Low-Spatu-Ventela-x-ntl-Murah-Seppatu-Pantela-Hitam-Putih-Laki-Laki-Perempuan-Keren-i.206924825.23550415711?sp_atk=6b0fe847-a6c3-49c1-a251-c8a24134e2bb&xptdk=6b0fe847-a6c3-49c1-a251-c8a24134e2bb" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s8.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Vantela New Public Low Spatu Ventela</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp189.000</del>
+                            <p class="price">Rp94.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 9 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/DR96-TUXEDO-DRESS-KANCING-LENGAN-PANJANG-WANITA-MOTIF-KERAH-BORDIR-i.181910914.22776746094?sp_atk=460fbbdf-332e-4409-b543-05adaa08ea48&xptdk=460fbbdf-332e-4409-b543-05adaa08ea48" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s9.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">TUXEDO DRESS KANCING MOTIF KERAH BORDIR</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp250.000</del>
+                            <p class="price">Rp138.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 10 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/IOOI-Eyewear-Kacamata-Oval-Cat-Eye-Hitam-Sunglasses-Vintage-Anti-UV-Pria-Wanita-693-i.866917040.12898182203?sp_atk=78d566ab-57ee-47e2-9a62-883831578206&xptdk=78d566ab-57ee-47e2-9a62-883831578206" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s19.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">IOOI Eyewear - Kacamata Oval Cat Eye Hitam Sunglasses</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp200.000</del>
+                            <p class="price">Rp49.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 11 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/-Luxxite_co-BISA-INSTAN-SAMEDAY-Two-tone-top-off-shoulder-top-atasan-wanita-sexy-knit-croptop-i.105776465.18191778062?sp_atk=bf8b5f55-4ff1-42bd-97de-f60f8b5b7f01&xptdk=bf8b5f55-4ff1-42bd-97de-f60f8b5b7f01" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s10.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Two tone top | off shoulder top</h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp79.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 12 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Shoulder-Bag-wanita-Slingbag-pita-Tali-kepang-FT005-i.192181600.21791233046?sp_atk=ef7c286a-dbf7-46e1-ac8d-10387397c284&xptdk=ef7c286a-dbf7-46e1-ac8d-10387397c284" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s11.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Slingbag pita Tali kepang </h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp60.000
+                            </del>
+                            <p class="price">Rp35.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 13 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Topi-Baseball-NEW-YORK-EST-1625-Hat-Cap-Casual-Sport-Distro-i.777304214.18176558362?sp_atk=00e12cee-3c79-4485-abaa-0266677b2872&xptdk=00e12cee-3c79-4485-abaa-0266677b2872" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s12.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Topi Baseball NEW YORK EST 1625</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp100.000</del>
+                            <p class="price">Rp33.800</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 14 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Celana-Higwaist-Kulot-Jeans-Wanita-Celana-jeans-Wanita-Kasual-Celana-Panjang-Wanita-Premium-size-27-34-i.859988330.21361295111?sp_atk=c2c4c595-c613-454f-bb44-0dc577c06a77&xptdk=c2c4c595-c613-454f-bb44-0dc577c06a77" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s13.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Celana Higwaist Kulot Jeans Wanita</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp75.000</del>
+                            <p class="price">Rp68.250</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 15 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/-littlecrab-Kaos-Oversize-Kemeja-Kaos-Unreal-A-Tshirt-By-Atrckee-Kaos-Couple-Unisex-Tshirt-Berkualitas-Korean-Style-i.269659676.10425369337?sp_atk=1d13810a-4981-4d49-88b2-f968070b6a80&xptdk=1d13810a-4981-4d49-88b2-f968070b6a80" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s14.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Kaos Oversize Kemeja Kaos Unreal A Tshirt By Atrckee</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp81.840</del>
+                            <p class="price">Rp72.019</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 16 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Bahasa-Perancis-Gaun-Putih-Wanita-Musim-Panas-Puff-Lengan-One-Piece-V-Leher-Pinggang-Tipis-Temperamen-Di-Atas-Lutut-Rok-Panjang-i.419328581.14082086521?sp_atk=42a25c8f-3464-4899-acd0-cafdf72703ac&xptdk=42a25c8f-3464-4899-acd0-cafdf72703ac" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s15.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Gaun Putih Wanita Musim Panas Puff</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp250.000</del>
+                            <p class="price">Rp158.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 17 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/Mismi-Odelia-Bag-Tas-Ransel-Wanita-Motif-Bunga-Korean-Style-School-Backpack-Perempuan-Stylish-31O-i.342985281.22747966343?sp_atk=fdfb94e0-9c30-4aaf-9942-4dd26072f1b3&xptdk=fdfb94e0-9c30-4aaf-9942-4dd26072f1b3" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s16.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Mismi Odelia Bag Tas Ransel Wanita Motif Bunga</h5>
+                        </div>
+                        <div class="price-box">
+                            <del>Rp420.000</del>
+                            <p class="price">Rp109.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Foto ke 18 -->
+            <div class="col-md-2">
+                <a href="https://shopee.co.id/-Premium-Midi-Dress-Halter-Neck-Mid-Length-Long-Sleeved-Dress-7359-S-M-L-i.16762565.18272563413?sp_atk=3ecb664b-b072-4088-97c6-b7fc944f6881&xptdk=3ecb664b-b072-4088-97c6-b7fc944f6881" target="_blank">
+                    <div class="card crop-img">
+                        <img
+                            src="./img/shopee photo/s18.jpeg"
+                            class="card-img-top"
+                            alt="Product Image"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Midi Dress Halter Neck Mid Length Long Sleeved Dress</h5>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">Rp199.000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+
+        </div>
+    </div>
+</div>
+
+            
+        
+<!-- About Me -->
+<div id="about-me" class="container-fluid pt-5 pb-5 bg-dark">
+    <div class="container text-center">
+        <!-- Judul "About Me" dengan gaya display-3 dari Bootstrap -->
+        <h2 class="display-3">About Me</h2>
+        <!-- Paragraf pertama mengenai sambutan dan tujuan halaman JeRe -->
+        <p>
+            Welcome to JeRe, where passion for fashion meets boundless inspiration. I am Jeane, a fashion enthusiast embarking on this journey with a simple goal: to bring the latest fashion trends directly to you.
+        </p>
+        <!-- Paragraf kedua yang mengajak pengunjung untuk menjelajahi tren dan gaya -->
+        <p>Join us on this exploration of style and current trends. We invite you to discover how fashion can reflect your personality and how each clothing choice can be a step towards becoming the best version of yourself.
+        </p>
+        <!-- Row untuk menampilkan informasi tentang penulis -->
+        <div class="row pt-4 gx-4 gy-4 justify-content-center"> <!-- Menambahkan justify-content-center di sini -->
+            <div class="col-md-4 text-center tim">
+                <!-- Foto Pemilik Web -->
+                <img
+                    src="./img/jean.jpg"
+                    class="rounded-circle mb-3"
+                    style="width: 200px; height: 200px; object-fit: cover;" 
+                />
+                <!-- Keterangan Nama -->
+                <h4>Jeane Aprilania Trixsie Manurung</h4>
+                <!-- Keterangan Jabatan -->
+                <p>CEO</p>
+                <p>
+                    <!-- Link Sosial Media Pemilik Web -->
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/jeaneaprill" class="social"><i class="fab fa-instagram"></i></a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/6281293320825" class="social"><i class="fab fa-whatsapp"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="container text-center pt-5 pb-5 bg-dark">
+        <!-- teks yang akan ditampilkan di dalam blok. "All Rights Reserved" menandakan bahwa semua hak dilindungi -->
+        All Rights Reserved &copy; 2023
+      </div>
+      <!-- Referensi ke file script.js -->
+      <script src="script.js"></script>
+
+    </body>
+  </html> 
